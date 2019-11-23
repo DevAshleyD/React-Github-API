@@ -2,6 +2,7 @@
   "name": "github-finder",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://DevAshleyD.github.io/React-Github-API",
   "dependencies": {
     "@material-ui/core": "^1.2.1",
     "@material-ui/icons": "^1.1.0",
@@ -10,6 +11,7 @@
     "axios-mock-adapter": "^1.17.0",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
+    "gh-pages": "^2.1.1",
     "prop-types": "^15.6.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -33,7 +35,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
